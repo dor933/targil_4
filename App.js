@@ -1,20 +1,37 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './Components/Homescreen';
+import Contextprovide from './Components/Contextprovider';
+import Personal from './Components/Personal';
+import Work from './Components/Work';
+import Ideas from './Components/Ideas';
+import List from './Components/List';
 
-export default function App() {
+
+
+
+const Stack = createNativeStackNavigator();
+
+  
+
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Contextprovide>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='Home'>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Personal" component={Personal} />
+        <Stack.Screen name="Work" component={Work} />
+        <Stack.Screen name="Ideas" component={Ideas} />
+        <Stack.Screen name="List" component={List} />
+      </Stack.Navigator>
+    </NavigationContainer>
+    </Contextprovide>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
+
+// code for light blue color is 
+// #e7e7e8
