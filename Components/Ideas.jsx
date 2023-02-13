@@ -24,7 +24,6 @@ export default function Ideasscreen({navigation}) {
         <View style={{flex:1,alignItems:"center"}}>
   <Header
           title="My Tasks App"
-          leftComponent={{ icon: 'menu', color: '#fff' }}
           centerComponent={{ text: 'Ideas:' + numberideas, style: { color: '#fff' } }}
           rightComponent={  <TouchableOpacity onPress={()=> navigation.navigate("Home")}>
 
@@ -98,6 +97,7 @@ export default function Ideasscreen({navigation}) {
         textAlign : "center",
         marginBottom : 90,
         width:300,
+        marginTop:20
     } ,
     textrows: {
         color: "#fff",

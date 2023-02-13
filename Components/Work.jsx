@@ -24,8 +24,7 @@ export default function WorkScreen({navigation}) {
         <View style={{flex:1,alignItems:"center"}}>
   <Header
           title="My Tasks App"
-          leftComponent={{ icon: 'menu', color: '#fff' }}
-          centerComponent={{ text: 'Work:' + {numberwork}, style: { color: '#fff' } }}
+          centerComponent={{ text: 'Work:' + numberwork, style: { color: '#fff' } }}
           rightComponent={  <TouchableOpacity onPress={()=> navigation.navigate("Home")}>
 
           <Icon name='home' color="#fff" />
@@ -99,6 +98,7 @@ export default function WorkScreen({navigation}) {
         textAlign : "center",
         marginBottom : 90,
         width:300,
+        marginTop:20
     } ,
     textrows: {
         color: "#fff",

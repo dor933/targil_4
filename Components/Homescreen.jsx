@@ -156,7 +156,7 @@ useEffect(() => {
             <Pressable
               style={[styles.buttonClose]}
               onPress={() => setModalVisible(!modalVisible)}>
-              <Text style={styles.textStyle}>Hide Modal</Text>
+              <Text style={styles.textStyle}>Close</Text>
             </Pressable>
 
           </View>
@@ -187,7 +187,7 @@ useEffect(() => {
       <Pressable
         style={[styles.buttonClose]}
         onPress={() => setModalVisible2(!modalVisible2)}>
-        <Text style={styles.textStyle}>Hide Modal</Text>
+        <Text style={styles.textStyle}>Close</Text>
       </Pressable>
 
     </View>
@@ -254,7 +254,7 @@ useEffect(() => {
     },
   
     buttonClose: {
-      backgroundColor: '#2196F3',
+      backgroundColor: 'red',
       borderRadius: 20,
       padding: 10,
       marginTop:170,

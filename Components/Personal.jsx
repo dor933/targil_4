@@ -31,7 +31,6 @@ export default function Personalscreen({navigation}) {
         <View style={{flex:1,alignItems:"center"}}>
   <Header
           title="My Tasks App"
-          leftComponent={{ icon: 'menu', color: '#fff' }}
           centerComponent={{ text: "Personal:" + numberpersonal, style: { color: '#fff' } }}
           rightComponent= {  <TouchableOpacity onPress={()=> navigation.navigate("Home")}>
 
@@ -111,6 +110,7 @@ export default function Personalscreen({navigation}) {
         textAlign : "center",
         marginBottom : 90,
         width:300,
+        marginTop:20
     } ,
     textrows: {
         color: "#fff",

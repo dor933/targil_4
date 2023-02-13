@@ -23,7 +23,6 @@ export default function Listscreen({navigation}) {
         <View style={{flex:1,alignItems:"center"}}>
   <Header
           title="My Tasks App"
-          leftComponent={{ icon: 'menu', color: '#fff' }}
           centerComponent={{ text: 'List:' + numberlist, style: { color: '#fff' } }}
           rightComponent={  <TouchableOpacity onPress={()=> navigation.navigate("Home")}>
 
@@ -100,6 +99,7 @@ export default function Listscreen({navigation}) {
         textAlign : "center",
         marginBottom : 90,
         width:300,
+        marginTop:20
     } ,
     textrows: {
         color: "#fff",
